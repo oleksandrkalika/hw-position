@@ -1,10 +1,14 @@
 /* div, p, a, span, ul, li {
     font-family: "Cabin", sans-serif;
 } */
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
 .wrapper {
     width: 1296px;
     margin: auto;
-    
 }
 .background-header {
     background-color: #10BBD5;
@@ -55,6 +59,8 @@
     font-size: 16px;
     line-height: 150%;
     color: #000;
+    position: sticky;
+    top: 72px;
 }
 .second-header {
     display: flex;
@@ -82,7 +88,7 @@
     font-size: 32px;
     line-height: 125%;
     color: #1f1f1f;
-    padding: 32px 0 23px 0;
+    padding: 136px 0 23px 0;
     border-bottom: 1px solid #a8a8a8;
 }
 .main-content {
@@ -238,6 +244,9 @@
     box-sizing: border-box;
     border-radius: 4px;
 }
+.btn-link-1:hover {
+    background-color: #744978;
+}
 .btn-link-2 {
     width: 100%;
     height: 100%;
@@ -252,6 +261,9 @@
     display: inline-block;
     box-sizing: border-box;
     border-radius: 4px;
+}
+.btn-link-2:hover {
+    background-color: #6DB236;
 }
 /* Footer */
 .footer-background {
@@ -270,4 +282,21 @@
     line-height: 150%;
     color: #f8fdfe;
     font-family: "Cabin", sans-serif;
+}
+
+.chat {
+    position: fixed;
+    height: 64px;
+    width: 64px;
+    right: 28px;
+    bottom: 28px;
+    border: none;
+    border-radius: 64px;
+    background-color: #10BBD5;
+    cursor: pointer;
+    background-image: url(../images/chat.svg);
+    background-position: center;
+}
+.chat:hover {
+    background-image: url(../images/chat1.svg);
 }
